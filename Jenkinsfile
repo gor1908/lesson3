@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "olena/jenkins"
+    imagename = "gor1908/lesson3"
     registryCredential = 'dockerhub_id'
     dockerImage = ''
   }
@@ -32,7 +32,7 @@ pipeline {
     }
     stage('Deploy') {
       steps{
-        sh "docker run --rm -d -p80:9090 olena/jenkins:latest"
+        sh "docker run --rm -d -p80:9090 gor1908/lesson3:latest"
         sh "date"
 
       }
