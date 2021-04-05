@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/gor1908/lesson3.git'])
+        git([url: 'https://github.com/gor1908/lesson3.git', 
+	branch:'main'])
 
       }
     }
