@@ -33,7 +33,7 @@ pipeline {
     }
     stage('Deploy') {
       steps{
-        sh "docker run --rm -d -p80:9091 gor1908/lesson3:latest"
+        sh "docker run --rm -d -p80:80 gor1908/lesson3:latest"
         sh "date"
 
       }
